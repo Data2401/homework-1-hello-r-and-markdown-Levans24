@@ -18,7 +18,8 @@ library(datasauRus)
 ### Exercise 1
 
 (Type your answer to Exercise 1 here. This exercise does not require any R code.)
-3 columns and 333 rows. The values in the data frame are dataset,x,and y variables
+ The datasaurus file has 13 columns and 2 rows. The variables in the data frame are integers for x and y variables
+
 
 ### Exercise 2
 
@@ -39,11 +40,11 @@ And next calculate the correlation between `x` and `y` in this dataset:
 dino_data %>%
   summarize(r = cor(x, y))
 
-
 ## # A tibble: 1*1
 ##        r
 ##    <dbl>
 ## 1-0.0645
+
 
 ```
 
@@ -53,7 +54,7 @@ dino_data %>%
 
 
 
-```{r plot-star}
+```{r plotstar}
 
 ## # A tibble: 1*1
 ##        r
@@ -63,23 +64,27 @@ dino_data %>%
 
 ```
 
-I'm some text, you should replace me with more meaningful text...
+This compares to the r of dino because it shows the values of the coefficient x and y
  
-```{r cor-star}
+```{r corrstar}
 1*1
 
-```
-
+``` 
 ### Exercise 4
 
 (Add code and narrative as needed. Note that two R chunks are given but they are not labeled. Use the convention from above to name them appropriately.)
 
-```{r}
+```{r plot}
 
 
 ```
 
-```{r}
+
+```{r corr}
+## # A tibble: 1*1
+##        r
+##    <dbl>
+## 1-0.0645
 
 
 ```
@@ -87,3 +92,11 @@ I'm some text, you should replace me with more meaningful text...
 ### Exercise 5
 
 (Add code and narrative as needed. To add R chunks either type out the backticks, curly braces, and the letter `r` or use the Insert chunk button above, with the green +C.)
+```{r}
+## # A tibble: 1*1
+##        r
+##    <dbl>
+## 1-0.0645
+```{r}
+
+
