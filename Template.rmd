@@ -19,6 +19,7 @@ library(datasauRus)
 
 (Type your answer to Exercise 1 here. This exercise does not require any R code.)
 3 columns and 333 rows. The values in the data frame are dataset,x,and y variables
+
 ### Exercise 2
 
 (The answers for this Exercise are given for you below. But you should clean up some of the narrative so that it only includes what you want to turn in.)
@@ -37,7 +38,15 @@ And next calculate the correlation between `x` and `y` in this dataset:
 ```{r cor-dino}
 dino_data %>%
   summarize(r = cor(x, y))
+
+
+## # A tibble: 1*1
+##        r
+##    <dbl>
+## 1-0.0645
+
 ```
+
 
 ### Exercise 3
 
